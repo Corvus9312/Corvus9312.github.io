@@ -2,8 +2,8 @@
 <title>蕭毅昊 Yi-hao, Hsiao</title>
 
 <head>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
-
 
   <link href="css/bootstrap.css" rel="stylesheet" />
   <link href="css/Resume.css" rel="stylesheet" />
@@ -279,12 +279,12 @@
     </article>
     <article id="project" class="row border-bottom justify-content-center text-center mt-3 pb-3">
       <span class="display-5 text-primary">project</span>
-      <div id="project-gallery">
-        <a href="Images/project1.png" data-pswp-width="300" data-pswp-height="300" data-cropped="true" target="_blank">
-          <img src="Images/project1.png" alt="" />
+      <div id="my-gallery" class="pswp-gallery pswp-gallery--single-column">
+        <a href="Images/project1.png" data-pswp-width="800" data-pswp-height="500" data-cropped="true" target="_blank">
+          <img src="Images/project1.png" alt="" width="500"/>
         </a>
-        <a href="Images/project2.png" data-pswp-width="300" data-pswp-height="300" data-cropped="true" target="_blank">
-          <img src="Images/project2.png" alt="" />
+        <a href="Images/project2.png" data-pswp-width="800" data-pswp-height="500" data-cropped="true" target="_blank">
+          <img src="Images/project2.png" alt="" width="500"/>
         </a>
       </div>
     </article>
@@ -294,15 +294,14 @@
     </article>
   </div>
 </body>
-
-</html>
-
 <script type="module">
-  import PhotoSwipeLightbox from './js/photoswipe-lightbox.esm.js';
-  const lightbox = new PhotoSwipeLightbox({
+  import Lightbox from 'https://corvus9312.github.io/js/photoswipe-lightbox.esm.js';
+  const lightbox = new Lightbox({
     gallery: '#my-gallery',
     children: 'a',
-    pswpModule: () => import('js/photoswipe.esm.js')
+    pswpModule: () => import('https://corvus9312.github.io/js/photoswipe.esm.js')
   });
   lightbox.init();
 </script>
+
+</html>
