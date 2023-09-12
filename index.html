@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-
 <head>
-    <!--- basic page needs
-      ================================================== -->
     <meta charset="utf-8">
     <title>蕭毅昊 ‧ Yi-hao, Hsiao</title>
     <meta property="og:type" content="article">
@@ -15,433 +12,94 @@
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- google search console verification info-->
+    <!-- google search console verification info -->
     <meta name="google-site-verification" content="WWG_XTIXLRTbP8ZXCc4D_l6Vs1APRHmori4RiaWFgnU" />
 
     <!-- script
-      ================================================== -->
+        ================================================== -->
     <script type="text/javascript" src="js/jquery_3.7.0.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
     <!-- CSS
-      ================================================== -->
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/photoswipe.css" />
-    <link rel="stylesheet" href="css/default-skin/default-skin.css" />
-    <link rel="stylesheet" href="css/bootstrap-icons.css">
+        ================================================== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/app.css" />
 </head>
-
-<body>
+<body class="bg-dark fs-5">
     <!-- navbar
-    ================================================== -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow">
-        <div class="container">
-            <a class="navbar-brand" href="#">Corvus</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#skill">Skill</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#award">Award</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#project">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        ================================================== -->
     <!-- end navbar -->
+    <article id="Content">
+        <!-- head
+            ================================================== -->
+        <section id="head" class="container-fluid py-5 text-light text-center bg-gradient">
+            <img src="images/headshot.jpg" class="rounded-circle " style="width: 5vw; min-width: 150px;">
+            <h3 class="py-3 my-0 fs-3 fw-bold">蕭毅昊 <span class="fs-5">Corvus</span></h3>
+            <p class="py-1 my-0">Backend Engineer</p>
+            <p class="py-1 my-0">
+                <i class="bi bi-envelope"></i>
+                <a href="mailto:k12234557@cycu.org.tw" class="text-light text-decoration-none">k12234557@cycu.org.tw</a>
+            </p>
+            <p class="pt-2" style="line-height: 2;">
+                興趣廣泛的傢伙，
+                <br />
+                莫名地當上軟體工程師。
+            </p>
+            <p class="pt-1 pb-2" style="line-height: 2;">
+                對軟體開發意外的熱衷，
+                <br />
+                喜歡交談、分享，獲得更多的有趣的知識。
+            </p>
+        </section>
+        <!-- end head -->
+        <!-- about
+            ================================================== -->
+        <section id="about" class="container-fluid py-5 text-center bg-light">
+            <h2>about</h2>
+            <h1>關於我</h1>
+            <p>畢業於中原大學資管所，目前於艾格生科技擔任工程師。</p>
+            <p>專長為軟體開發</p>
+            <p>主要開發語言：C#、Javascript、SQL</p>
+            <p>主要開發框架：.net Core、.net Framwork、Blazor、Bootstrap</p>
+            <div class="row">
+                <div>
 
-    <div id="content" class="text-dark mt-5">
-        <section id="about" class="py-3">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <img src="Images/headshot.jpg" class="rounded-circle " style="width: 10vw; min-width: 150px;">
-                    <div>
-                        <span class="fs-3">蕭毅昊 </span> <span class="fs-5">Yi-hao, Hsiao</span>
-                    </div>
-                    <span class="fs-5">Position：Backend Engineer</span>
-                    <div>
-                        <i class="bi-envelope fs-5"></i><a href="mailto:k12234557@cycu.org.tw"
-                                                           class="fs-5">k12234557@cycu.org.tw</a>
-                    </div>
-                    <span class="fs-5 mt-2">
-                        您好，我是蕭毅昊。
-                        <br />
-                        畢業於中原大學資管所，專長為軟體開發
-                        <br />
-                        對待工作熱情、負責，能夠以公司及團隊立場做出貢獻。
-                    </span>
-                    <span class="fs-7 mt-2">開發語言：C#、 JavaScript、 SQL</span>
-                    <span class="fs-7 mt-1">使用框架：.net framework、 .net Core、 Blazor、 Bootstrap</span>
                 </div>
             </div>
         </section>
-
-        <section id="skill" class="py-3 bg-light">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <h2 class="display-5 text-primary">skill</h2>
-                    <div class="row">
-                        <div class="col">
-                            <span class="fs-3 text-dark mt-2">Program</span>
-                            <br>
-                            <div class="skill-Item text-start pb-2">
-                                <span>C#</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 100%;" aria-valuenow="25"
-                                         aria-valuemin="0" aria-valuemax="100">100%</div>
-                                </div>
-                            </div>
-
-                            <div class="skill-Item text-start pb-2">
-                                <span>.net core3 ~ .net 6</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="25"
-                                         aria-valuemin="0" aria-valuemax="100">90%</div>
-                                </div>
-                            </div>
-
-                            <div class="skill-Item text-start pb-2">
-                                <span>.net Framwork</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%;" aria-valuenow="25"
-                                         aria-valuemin="0" aria-valuemax="100">75%</div>
-                                </div>
-                            </div>
-
-                            <div class="skill-Item text-start pb-2">
-                                <span>SQL</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="25"
-                                         aria-valuemin="0" aria-valuemax="100">85%</div>
-                                </div>
-                            </div>
-
-                            <div class="skill-Item text-start pb-2">
-                                <span>Javascript</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%;" aria-valuenow="25"
-                                         aria-valuemin="0" aria-valuemax="100">85%</div>
-                                </div>
-                            </div>
-
-                            <div class="skill-Item text-start pb-2">
-                                <span>pyhton</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="25"
-                                         aria-valuemin="0" aria-valuemax="100">70%</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <span class="fs-3 text-dark">Tools</span>
-                            <br>
-                            <div class="skill-Item text-start pb-2">
-                                <span>Github</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="25"
-                                         aria-valuemin="0" aria-valuemax="100">90%</div>
-                                </div>
-                            </div>
-
-                            <div class="skill-Item text-start pb-2">
-                                <span>Subversion</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="25"
-                                         aria-valuemin="0" aria-valuemax="100">90%</div>
-                                </div>
-                            </div>
-
-                            <div class="skill-Item text-start pb-2">
-                                <span>Azure DevOps</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="25"
-                                         aria-valuemin="0" aria-valuemax="100">70%</div>
-                                </div>
-                            </div>
-
-                            <div class="skill-Item text-start pb-2">
-                                <span>jira</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="25"
-                                         aria-valuemin="0" aria-valuemax="100">70%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- end about -->
+        <!--
+            ================================================== -->
+        <section id="project" class="container-fluid py-5 text-center bg-gray">
+            <h2></h2>
+            <h1>經歷</h1>
         </section>
+        <!-- end  -->
 
-        <section id="experience" class="py-3">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <h2 class="display-5 text-primary">experience</h2>
-                    <div class="row mt-4">
-                        <ul class="timeline timeline-centered">
-                            <li class="timeline-item">
-                                <div class="timeline-info">
-                                    <span>2023/06 ～ present</span>
-                                </div>
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <h3 class="timeline-title">艾格生科技</h3>
-                                    <p>
-                                        內部軟體需求開發及維運<br />
-                                        艾格生內部網站開發及維運<br />
-                                        機台匯出資料整合運用<br />
-                                        軟體架構建設
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="timeline-item">
-                                <div class="timeline-info">
-                                    <span>2022/04 ～ 2023/03</span>
-                                </div>
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <h3 class="timeline-title">FDB</h3>
-                                    <p>
-                                        後端開發前台網站<br />
-                                        全端開發後台網站<br />
-                                        全端網站維運<br />
-                                        Azure DevOps架設及維運
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="timeline-item">
-                                <div class="timeline-info">
-                                    <span>2020/02 ～ 2022/04</span>
-                                </div>
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <h3 class="timeline-title">聯邦網通股份有限公司</h3>
-                                    <p>
-                                        整合客戶需求進行軟體專案設計<br />
-                                        全端開發後台網站及後台相關軟體<br />
-                                        與外部公司接洽及合作開發專案<br />
-                                        Legacy code維運並重構優化程式碼可讀性及效能
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="timeline-item">
-                                <div class="timeline-info">
-                                    <span>2019/09 ～ 2019/12</span>
-                                </div>
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <h3 class="timeline-title">威煦軟體股份有限公司</h3>
-                                    <p>
-                                        後端開發及維護<br />
-                                        Console程式開發及維護
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="education" class="py-3 bg-light">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <h2 class="display-5 text-primary">education</h2>
-                    <div class="row mt-4">
-                        <ul class="timeline timeline-centered">
-                            <li class="timeline-item">
-                                <div class="timeline-info">
-                                    <span>2016/09 ～ 2018/06</span>
-                                </div>
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <h3 class="timeline-title">
-                                        中原大學, <h4>資訊管理研究所</h4>
-                                    </h3>
-                                    <p>
-                                        於桃園市北湖國小進行基礎程式教學。
-                                        <br />
-                                        中原大學創新發展中心助理
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="timeline-item">
-                                <div class="timeline-info">
-                                    <span>2012/09 ～ 2016/06</span>
-                                </div>
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <h3 class="timeline-title">
-                                        元培醫事科技大學, <h4>資訊管理系</h4>
-                                    </h3>
-                                    <p>
-                                        參與國內各項軟體應用競賽
-                                        <br />
-                                        參加國際發明展(Seoul International Invention Fair 2015)
-                                        <br />
-                                        104年國科會職安衛健康評估管理系統(104-2815-C-264-003-E)計畫
-                                        <br />
-                                        資訊服務社-社長
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+    </article>
 
-        <section id="award" class="py-3">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <h2 class="display-5 text-primary">award</h2>
-                    <ul class="awardList text-start mt-1" style="width: max-content;">
-                        <li>Seoul International Invention Fair 2015(SIIF2015，韓國首爾國際發明展)-Gold Prize(金牌)</li>
-                        <li>2015 軟體創作達人暑期成長營-特優</li>
-                        <li>2015 軟體創作達人暑期成長營-台灣微軟企業特別獎</li>
-                        <li>2015 Cyberspace 聯合研討會 個案競賽-特優第一名</li>
-                        <li>精誠盃APP創意競賽-冠軍</li>
-                        <li>2015經濟部搶鮮大賽-優秀</li>
-                        <li>2015經濟部搶鮮大賽-佳作</li>
-                        <li>第20屆全國大專校院資訊應用服務創新競賽-TQC+智慧型手持裝置兩岸交流應用組-第三名</li>
-                        <li>2015台中盃全國創意競賽-佳作</li>
-                        <li>2016微軟潛能創意盃 Image Cup台灣區-決賽入圍</li>
-                        <li>Open Data創新應用競賽-決賽入圍</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="project" class="py-3 bg-light">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <h2 class="display-5 text-primary">project</h2>
-                    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery" style="width: max-content;">
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"
-                                style="width: max-content; float: left;" class="m-3">
-                            <a href="Images/project1.png" itemprop="contentUrl" data-size="797x1080">
-                                <img src="Images/project1-min.png" itemprop="thumbnail" alt="" width="300" />
-                            </a>
-                            <figcaption itemprop="caption description">職安過勞預防系統</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"
-                                style="width: max-content; float: left;" class="m-3">
-                            <a href="Images/project2.png" itemprop="contentUrl" data-size="1110x1050">
-                                <img src="Images/project2.png" itemprop="thumbnail" alt="" width="300" />
-                            </a>
-                            <figcaption itemprop="caption description">過勞警示系統開發與評估</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"
-                                style="width: max-content; float: left;" class="m-3">
-                            <a href="Images/project3.png" itemprop="contentUrl" data-size="1200x920">
-                                <img src="Images/project3.png" itemprop="thumbnail" alt="" width="300" />
-                            </a>
-                            <figcaption itemprop="caption description">FDB-虛擬貨幣交易論壇</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="py-3">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <h2 class="display-5 text-primary">contact</h2>
-                    <span class="fs-5 mt-2">
-                        目前任職於艾格生科技，學生時期開發職安過勞預防系統，並獲國內外各項軟體競賽獎項。
-                        <br />
-                        畢業後也繼續軟體開發設計相關工作，目前年資已逾四年，軟體開發經驗也達十餘年。
-                        <br />
-                        專精軟體開發、網站設計、App開發及多樣程式語言(C#、Java、Python)，目前仍專注精進軟體設計開發。
-                        <br />
-                        若有任何疑問與指教，請不吝與敝人聯繫。
-                    </span>
-                    <div class="mt-4 justify-content-center text-center" style="width: max-content;">
-                        <i class="bi-envelope fs-7"></i>
-                        <a href="mailto:k12234557@cycu.org.tw" class="fs-7">k12234557@cycu.org.tw</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer class="bg-dark">
-            <div class="container-fluid">
-                <div class="row justify-content-center text-center">
-                    <div class="footer-logo">
-                        <a class="footer-site-logo" href="#"><img src="Images/logo.png" alt="Logo"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row justify-content-center text-center">
-                    <div class="copyright">
-                        <span>© Copyright Yi-hao,Hsiao 2023</span>
-                        <span>Design by <a href="https://getbootstrap.com/">Bootstrap</a></span>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div>
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div>
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
+    <!-- footer
+        ================================================== -->
+    <footer class="container-fluid bg-dark text-light fs-5">
+        <div class="row justify-content-center text-center py-5">
+            <div class="footer-logo">
+                <a class="footer-site-logo text-light ext-decoration-none fs-3" href="#">
+                    Corvus+
+                    <!--<img src="Images/logo.png" alt="Logo">-->
+                </a>
             </div>
         </div>
-    </div>
-
-    <!-- photoswipe4.1.3, http://potoswipe.com, license MIT -->
-    <script type="text/javascript" src="js/photoswipe.min.js"></script>
-    <script type="text/javascript" src="js/photoswipe-ui-default.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+        <div class="row justify-content-center text-center pt-3 pb-3 fs-6">
+            <div class="copyright">
+                <span>© Copyright Corvus 2023</span>
+                <span>Design by <a href="https://getbootstrap.com/">Bootstrap</a></span>
+            </div>
+        </div>
+    </footer>
+    <!-- end head -->
 </body>
-
 </html>
