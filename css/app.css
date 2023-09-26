@@ -23,17 +23,25 @@ footer {
 }
 
 .bg-gray {
-    background-color: #f1f1f1;
+    background-color: #f5f5f5;
 }
 
 section h1 {
     color: #000000;
-    font-weight: 700;
 }
 
 section h2 {
     color: #862121;
     font-weight: 700;
+}
+
+.content-head::after {
+    content: "";
+    display: block;
+    width: 240px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 50px auto 20px auto;
 }
 
 .progress-bar {
