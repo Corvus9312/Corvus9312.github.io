@@ -10,17 +10,17 @@ footer {
 }
 
 #head {
-    background-color: #424b54;
+    background-color: #544242;
 }
 
-#head h3::after {
-    content: "";
-    display: block;
-    width: 175px;
-    height: 2px;
-    background-color: white;
-    margin: 0.25rem auto;
-}
+    #head h3::after {
+        content: "";
+        display: block;
+        width: 175px;
+        height: 2px;
+        background-color: white;
+        margin: 0.25rem auto;
+    }
 
 .bg-gray {
     background-color: #f5f5f5;
@@ -46,4 +46,20 @@ section h2 {
 
 .progress-bar {
     background-color: #862121;
+}
+
+#award ul {
+    width: max-content;
+}
+
+    #award ul li {
+        height: auto;
+    }
+
+        #award ul li::marker {
+            color: #862121;
+        }
+
+.indent {
+    text-indent: 2em;
 }
