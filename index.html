@@ -26,16 +26,34 @@
     <link rel="stylesheet" href="css/timeline.css" />
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/app.css" />
 </head>
 <body class="bg-dark fs-5">
     <!-- navbar
         ================================================== -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">Corvus</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#award">Award</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#project">Project</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- end navbar -->
     <article id="Content">
         <!-- head
             ================================================== -->
-        <section id="head" class="container-fluid py-5 text-light text-center bg-gradient">
+        <section id="head" class="container-fluid py-3 text-light text-center bg-gradient">
             <img src="images/headshot.jpg" class="rounded-circle " style="width: 5vw; min-width: 150px;">
             <h3 class="py-3 my-0 fs-3 fw-bold">蕭毅昊 <span class="fs-5">Corvus</span></h3>
             <p class="py-1 my-0">Backend Engineer</p>
@@ -64,11 +82,11 @@
             <h2>about</h2>
             <h1>關於我</h1>
             <div class="content-head pb-3">
-                <p>目前於艾格生科技擔任工程師</p>
-                <p>畢業於中原大學資管所。</p>
-                <p>專長為軟體設計開發</p>
-                <p>主要開發語言：C#、Javascript、SQL</p>
-                <p>主要開發框架：.net Core、.net Framwork、Blazor、Bootstrap</p>
+                <p class="mb-1">目前於艾格生科技擔任工程師</p>
+                <p class="mb-1">畢業於中原大學資管所。</p>
+                <p class="mb-1">專長為軟體設計開發</p>
+                <p class="mb-1">主要開發語言：C#、Javascript、SQL</p>
+                <p class="mb-1">主要開發框架：.net Core、.net Framwork、Blazor、Bootstrap</p>
             </div>
             <div class="container">
                 <div class="row">
@@ -233,9 +251,9 @@
         <section id="award" class="container-fluid py-5 text-center bg-light">
             <h2>award</h2>
             <h1>獲獎列表</h1>
-            <div class="content-head py-3">
-                <p>學生時期(2015~2016)代表學校參加國內外軟體競賽。</p>
-                <p>共獲得11項獎項，其中包含2件國際獎項、4件第一名、1件第三名、4件佳作及特別獎</p>
+            <div class="content-head pb-3">
+                <p class="mb-1">學生時期(2015~2016)代表學校參加國內外軟體競賽。</p>
+                <p class="mb-1">共獲得11項獎項，其中包含2件國際獎項、4件第一名、1件第三名、4件佳作及特別獎</p>
             </div>
             <div class="row justify-content-center text-start">
                 <ul class="w-50">
@@ -259,30 +277,39 @@
             ================================================== -->
         <section id="project" class="container-fluid py-5 text-center bg-gray">
             <h2>projects</h2>
-            <h1>作品專案</h1>
-            <div class="row">
-                <figure class="col-lg-4">
-                    <img src="images/projects/fundobit.png" class="w-100">
-                    <figcaption>fundobit區塊鍊平台</figcaption>
-                </figure>
-                <figure class="col-lg-4">
-                    <img src="images/projects/linePNP.png" class="w-100">
-                    <figcaption>Line通知型訊息</figcaption>
-                </figure>
-                <figure class="col-lg-4">
-                    <img src="images/projects/lineBC.png" class="w-100">
-                    <figcaption>Line個人化服務</figcaption>
-                </figure>
-                <figure class="col-lg-4">
-                    <img src="images/projects/masterThesis.png" class="w-100">
-                    <figcaption>碩論-過勞警示系統開發與評估</figcaption>
-                </figure>
-                <figure class="col-lg-4">
-                    <img src="images/projects/occupationalSafety.png" class="w-100">
-                    <figcaption>職安過勞預防系統</figcaption>
-                </figure>
+            <h1>執行專案</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <figure>
+                            <img src="images/projects/fundobit.png" class="w-100">
+                            <figcaption>fundobit區塊鍊平台</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/projects/masterThesis.png" class="w-100">
+                            <figcaption>碩論-過勞警示系統開發與評估</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-3">
+                        <figure>
+                            <img src="images/projects/linePNP.png" class="w-100">
+                            <figcaption>Line通知型訊息</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-3">
+                        <figure>
+                            <img src="images/projects/lineBC.png" class="w-100">
+                            <figcaption>Line個人化服務</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-3">
+                        <figure>
+                            <img src="images/projects/occupationalSafety.png" class="w-100">
+                            <figcaption>職安過勞預防系統</figcaption>
+                        </figure>
+                    </div>
+                </div>
             </div>
-
         </section>
         <!-- end project -->
     </article>
@@ -293,7 +320,7 @@
         <div class="row justify-content-center text-center py-5">
             <div class="footer-logo">
                 <a class="footer-site-logo text-light ext-decoration-none fs-3" href="#">
-                    Corvus9312
+                    Corvus
                     <!--<img src="Images/logo.png" alt="Logo">-->
                 </a>
             </div>

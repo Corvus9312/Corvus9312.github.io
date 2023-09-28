@@ -3,6 +3,19 @@ body {
     /*background-color: #424b54;*/
 }
 
+nav {
+    font-family: "montserrat-bold", "微軟正黑體", sans-serif;
+    height: 4rem;
+}
+
+.nav-link {
+    font-size: 14px;
+}
+
+#Content {
+    margin-top: 4rem;
+}
+
 footer {
     font-size: 14px;
     text-align: center;
