@@ -1,0 +1,11 @@
+#intro.hidden {
+    top: -100%;
+}
+
+#banner.hidden {
+    top: -100%;
+}
+
+#content.hidden {
+    bottom: -100%;
+}
