@@ -111,11 +111,11 @@ p {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        width: 100vw;
+        width: 100%;
         opacity: inherit;
     }
 
-    #content > ::after {
+    #content #innerBody > ::after {
         content: "";
         display: block;
         width: 240px;
@@ -131,6 +131,23 @@ p {
 
     #content p, a, span {
         color: #000000;
+    }
+
+.content-head {
+    padding-bottom: 0.5rem;
+}
+
+    .content-head p {
+        margin-bottom: 1rem;
+    }
+
+    .content-head::after {
+        content: "";
+        display: block;
+        width: 240px;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 50px auto 20px auto;
     }
 
 .progress {
@@ -153,3 +170,75 @@ p {
 .skill p {
     margin: 0.75rem 0 0 0;
 }
+
+#award .award-list {
+    display: flex;
+    text-align: left;
+    justify-content: center !important;
+}
+
+    #award .award-list ul {
+        width: 50%;
+    }
+
+        #award .award-list ul li {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+            #award .award-list ul li::marker {
+                color: #862121;
+            }
+
+#content footer {
+    background-color: #212529;
+}
+
+    #content footer .footer-content {
+        height: 100%;
+        width: 100%;
+    }
+
+        #content footer .footer-content a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 0.75rem;
+            max-width: max-content;
+        }
+
+        #content footer .footer-content p, a, span {
+            text-align: center !important;
+            color: #FFFFFF !important;
+            text-decoration: none;
+        }
+
+        #content footer .footer-content .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 3rem;
+        }
+
+            #content footer .footer-content .footer-logo .footer-site-logo {
+                font-size: 2rem;
+            }
+
+        #content footer .footer-content .footer-contact {
+            font-size: 1.25rem;
+            padding-top: 1.5rem;
+            padding-bottom: 3rem;
+        }
+
+            #content footer .footer-content .footer-contact .footer-contact-community, .footer-contact-mail {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0.75rem 0;
+            }
+
+            #content footer .footer-content .footer-contact img {
+                height: 1.5rem;
+                width: 1.5rem;
+                filter: invert(95%) sepia(0%) saturate(0%) hue-rotate(182deg) brightness(105%) contrast(105%);
+            }
