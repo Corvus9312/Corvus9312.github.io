@@ -1,24 +1,22 @@
 const intro = document.getElementById('intro');
-const community = document.getElementById('community');
 const banner = document.getElementById('banner');
+
+const bannerGroup = [intro, banner]
 const content = document.getElementById('content');
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function goBack() {
+async function showIntroduction() {
     content.classList.add('hidden');
 
     await sleep(250);
-    [intro, community].forEach(e => e.classList.remove('hidden'));
-    banner.classList.remove('hidden');
+    bannerGroup.forEach(e => e.classList.remove('hidden'));
 }
 
-async function nextPage() {
-    [intro, community].forEach(e => e.classList.add('hidden'));
-
-    banner.classList.add('hidden');
+async function showContent() {
+    bannerGroup.forEach(e => e.classList.add('hidden'));
 
     await sleep(250);
     content.classList.remove('hidden');
@@ -39,14 +37,14 @@ function startScrollTrigger() {
 
                 if ((e.deltaY) > 0) {
                     if (!isContent) {
-                        nextPage();
+                        showContent();
                         isContent = true;
                     } else {
                         lock = false
                     }
                 } else {
                     if (isContent) {
-                        goBack();
+                        showIntroduction();
                         isContent = false;
                     } else {
                         lock = false;
