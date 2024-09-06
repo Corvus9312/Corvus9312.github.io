@@ -70,8 +70,9 @@ p {
 
 
 .avator {
-    border-radius: 50%;
+    height: auto;
     width: 5vw;
+    border-radius: 50%;
     min-width: 150px;
 }
 
@@ -84,13 +85,18 @@ p {
     margin: 0;
 }
 
-    #community > * {
+    #community a {
         display: inline-block;
         width: 35px;
         margin: 0 1rem;
         opacity: 85%;
         filter: invert(100%);
     }
+
+        #community a img {
+            height: auto;
+            width: 100%;
+        }
 
 #content {
     position: fixed;
