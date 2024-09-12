@@ -25,29 +25,33 @@ async function showContent() {
 function startScrollTrigger() {
     let isContent = false;
     let lock = false;
+    let startY = 0;
+
+    document.body.addEventListener('touchstart', e => { startY = e.touches[0].clientY; }, { passive: false });
 
     const listener = e => {
+        let scrolldown = false;
+        if (e.type == 'wheel') scrolldown = e.deltaY > 0;
+        else if (e.type == 'touchmove') scrolldown = startY > e.touches[0].clientY; 
+
         // 判斷是否在banner往下滑動或content的最上方並往上滑動
-        if (content.scrollTop == 0 && (isContent && e.deltaY < 0) || (!isContent && e.deltaY > 0)) {
+        if (content.scrollTop == 0 && ((isContent && !scrolldown) || (!isContent && scrolldown)))
+        {
             // 停止事件
             e.preventDefault();
 
             if (!lock) {
                 lock = true;
 
-                if ((e.deltaY) > 0) {
+                if (scrolldown) {
                     if (!isContent) {
                         showContent();
                         isContent = true;
-                    } else {
-                        lock = false
                     }
                 } else {
-                    if (isContent) {
+                     if (isContent) {
                         showIntroduction();
                         isContent = false;
-                    } else {
-                        lock = false;
                     }
                 }
 
