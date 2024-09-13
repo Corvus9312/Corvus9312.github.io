@@ -139,6 +139,13 @@ p {
         color: #000000;
     }
 
+
+@media screen and (max-width: 768px) {
+    #content section {
+        padding: 0 3rem;
+    }
+}
+
 .content-head {
     padding-bottom: 0.5rem;
 }
@@ -156,7 +163,30 @@ p {
         margin: 50px auto 20px auto;
     }
 
+
+.about-content {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+    .about-content div {
+        flex: 1 0 0%;
+    }
+
+
+@media screen and (min-width: 768px) {
+    .about-content {
+        width: 80%;
+        display: inline-flex;
+    }
+
+        .about-content div {
+            width: 80%;
+        }
+}
+
 .progress {
+    width: 100% !important;
     border-radius: 0.25rem;
 }
 
@@ -183,18 +213,25 @@ p {
     justify-content: center !important;
 }
 
+    #award .award-list ul li {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+        #award .award-list ul li::marker {
+            color: #862121;
+        }
+
+@media screen and (min-width: 768px) {
+    #award .award-list ul {
+        width: 75%;
+    }
+}
+@media screen and (min-width: 1440px) {
     #award .award-list ul {
         width: 50%;
     }
-
-        #award .award-list ul li {
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-        }
-
-            #award .award-list ul li::marker {
-                color: #862121;
-            }
+}
 
 #content footer {
     background-color: #212529;
