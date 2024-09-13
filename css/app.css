@@ -203,9 +203,13 @@ p {
     border-radius: inherit;
 }
 
-.skill p {
-    margin: 0.75rem 0 0 0;
+#skill {
+    width: 100%;
 }
+
+    #skill p {
+        margin: 0.75rem 0 0 0;
+    }
 
 #award .award-list {
     display: flex;
@@ -227,6 +231,7 @@ p {
         width: 75%;
     }
 }
+
 @media screen and (min-width: 1440px) {
     #award .award-list ul {
         width: 50%;
