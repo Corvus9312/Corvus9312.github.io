@@ -6,7 +6,7 @@
 }
 
 html, body {
-    font-family: "montserrat-regular", "微軟正黑體", sans-serif;
+    font-family: "montserrat-regular", "GenSenRounded-R", sans-serif;
     height: 100vh;
     height: -webkit-fill-available;
     width: 100vw;
@@ -17,6 +17,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "montserrat-regular", "GenSenRounded-B", sans-serif;
 }
 
 h1 {
@@ -236,6 +240,10 @@ p {
     #award .award-list ul {
         width: 50%;
     }
+}
+
+#project img {
+    width: 50%;
 }
 
 #content footer {
